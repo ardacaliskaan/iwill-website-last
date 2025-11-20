@@ -28,7 +28,7 @@ export default function Home() {
         className="min-h-screen flex items-center justify-center pt-20 px-6 md:px-16 bg-cover bg-center relative"
         style={{ backgroundImage: "url('/anasayfa-resim.png')" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/70 to-primary-light/50" />
+        <div className="absolute inset-0 bg-black/30" />
         
         <div className="relative z-10 text-center max-w-3xl animate-fadeInUp">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">

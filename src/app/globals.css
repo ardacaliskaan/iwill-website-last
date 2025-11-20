@@ -4,13 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CSS Variables for Custom Colors */
+/* CSS Variables for Custom Colors - Turkuaz Tonları */
 :root {
-  --color-primary: #6C63FF;
-  --color-primary-dark: #5A52E0;
-  --color-primary-light: #8B85FF;
+  --color-primary: #00B4D8;
+  --color-primary-dark: #0096C7;
+  --color-primary-light: #48CAE4;
   --color-secondary: #FF6B6B;
-  --color-accent: #4ECDC4;
+  --color-accent: #90E0EF;
 }
 
 /* Custom Utility Classes */
@@ -74,12 +74,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6C63FF;
+  background: #00B4D8;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #5A52E0;
+  background: #0096C7;
 }
 
 /* Loading Spinner */
@@ -87,7 +87,7 @@ body {
   width: 40px;
   height: 40px;
   border: 4px solid rgba(255, 255, 255, 0.3);
-  border-top-color: #6C63FF;
+  border-top-color: #00B4D8;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
