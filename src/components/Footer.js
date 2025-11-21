@@ -108,7 +108,7 @@ export default function Footer() {
               <li>
                 <span className="text-gray-400 text-sm flex items-center gap-2">
                   <i className="fas fa-map-marker-alt"></i>
-                  İstanbul, Türkiye
+                  Karabük, Türkiye
                 </span>
               </li>
             </ul>

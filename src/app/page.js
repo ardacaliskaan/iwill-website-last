@@ -25,16 +25,23 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section 
-        className="min-h-screen flex items-center justify-center pt-20 px-6 md:px-16 bg-cover bg-center relative"
+        className="min-h-screen flex items-center justify-center pt-20 px-6 md:px-16 bg-cover bg-center relative overflow-hidden"
         style={{ backgroundImage: "url('/anasayfa-resim.png')" }}
       >
-        <div className="absolute inset-0 bg-black/30" />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 via-gray-800/60 to-primary-dark/50" />
+        
+        {/* Animated background effects */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
         
         <div className="relative z-10 text-center max-w-3xl animate-fadeInUp">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
             Türkiye'nin Sosyal Platformu
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-10 font-light">
+          <p className="text-xl md:text-2xl text-white/90 mb-10 font-light drop-shadow-lg">
             i will ile geleceğini paylaş
           </p>
           
@@ -43,25 +50,25 @@ export default function Home() {
               href="https://apps.apple.com/app/i-will/id6744853265"
               target="_blank"
               rel="noopener noreferrer"
-              className="transform hover:scale-105 hover:-translate-y-1 transition-all"
+              className="bg-white text-gray-900 px-8 py-4 rounded-2xl flex items-center justify-center gap-4 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group"
             >
-              <img 
-                src="/app-store.png" 
-                alt="App Store'dan İndir" 
-                className="h-14 drop-shadow-lg"
-              />
+              <i className="fab fa-apple text-4xl group-hover:scale-110 transition-transform"></i>
+              <div className="text-left">
+                <span className="block text-xs text-gray-500 uppercase tracking-wider">Download on the</span>
+                <span className="block text-xl font-bold">App Store</span>
+              </div>
             </a>
             <a 
               href="https://play.google.com/store/apps/details?id=com.gelecekmobilyazilim.iwill"
               target="_blank"
               rel="noopener noreferrer"
-              className="transform hover:scale-105 hover:-translate-y-1 transition-all"
+              className="bg-white text-gray-900 px-8 py-4 rounded-2xl flex items-center justify-center gap-4 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group"
             >
-              <img 
-                src="/google-play.png" 
-                alt="Google Play'den İndir" 
-                className="h-14 drop-shadow-lg"
-              />
+              <i className="fab fa-google-play text-3xl group-hover:scale-110 transition-transform"></i>
+              <div className="text-left">
+                <span className="block text-xs text-gray-500 uppercase tracking-wider">Get it on</span>
+                <span className="block text-xl font-bold">Google Play</span>
+              </div>
             </a>
           </div>
         </div>

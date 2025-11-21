@@ -6,13 +6,16 @@ export default function Hakkimizda() {
     {
       name: 'Yunus Emre Kayıkçı',
       role: 'Kurucu & CEO',
-      image: '/emre-kayikci.jpg',
       slug: 'emre-kayikci'
     },
     {
-      name: 'Arda Çalışkan',
+      name: 'Safa Erol Altınok',
+      role: 'Co-Founder',
+      slug: 'safa-erol-altinok'
+    },
+    {
+      name: 'Mahmut Arda Çalışkan',
       role: 'Geliştirici',
-      image: '',
       slug: 'arda-caliskan'
     }
   ]
@@ -41,8 +44,8 @@ export default function Hakkimizda() {
             </div>
             <div className="relative">
               <img 
-                src="/about-image.png" 
-                alt="i will Hakkında" 
+                src="/geleceklogo.png" 
+                alt="Gelecek Mobil Hakkında" 
                 className="rounded-xl shadow-lg"
               />
             </div>
@@ -77,26 +80,22 @@ export default function Hakkimizda() {
 
       {/* Team Section */}
       <section className="py-20 px-5 bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Ekibimiz</h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {teamMembers.map((member) => (
               <Link 
                 key={member.slug}
                 href={`/detaylar/${member.slug}`}
                 className="group"
               >
-                <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
-                  <div className="relative overflow-hidden">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-6 text-center">
-                    <h3 className="text-xl font-bold mb-1">{member.name}</h3>
+                <div className="bg-gradient-to-br from-blue-50 to-primary/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 border-2 border-primary/20">
+                  <div className="p-8 text-center">
+                    <div className="w-20 h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                      <i className="fas fa-user text-white text-3xl"></i>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2">{member.name}</h3>
                     <p className="text-primary font-medium">{member.role}</p>
                   </div>
                 </div>

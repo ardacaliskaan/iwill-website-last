@@ -22,7 +22,7 @@ export default function Kariyer() {
       location: 'Uzaktan',
     },
     {
-      title: 'Backend Developer (Node.js)',
+      title: 'Backend Developer (JAVA)',
       department: 'Mühendislik',
       type: 'Tam Zamanlı',
       location: 'Uzaktan',
