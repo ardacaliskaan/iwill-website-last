@@ -9,13 +9,8 @@ export default function Hakkimizda() {
       slug: 'emre-kayikci'
     },
     {
-      name: 'Safa Erol Altınok',
-      role: 'Co-Founder',
-      slug: 'safa-erol-altinok'
-    },
-    {
       name: 'Mahmut Arda Çalışkan',
-      role: 'Geliştirici',
+      role: 'Kurucu & Geliştirici',
       slug: 'arda-caliskan'
     }
   ]
