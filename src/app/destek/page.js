@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import PageHeader from '@/components/PageHeader'
 
+
 export default function Destek() {
   const [activeIndex, setActiveIndex] = useState(null)
 

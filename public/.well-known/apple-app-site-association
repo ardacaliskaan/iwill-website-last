@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TM3J4SP9F3.com.gelecekmobilyazilim.iwill",
+        "paths": ["/event/*", "/profile/*"]
+      }
+    ]
+  }
+}

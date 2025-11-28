@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.gelecekmobilyazilim.iwill",
+      "sha256_cert_fingerprints": ["C8:D3:02:B3:FE:38:E3:88:24:42:96:03:96:51:45:E9:00:AD:5E:27:82:E3:D7:04:96:F5:B1:5A:0F:02:BB:26"]
+    }
+  }
+]
