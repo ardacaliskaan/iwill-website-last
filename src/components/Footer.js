@@ -127,19 +127,7 @@ export default function Footer() {
 
             {/* Ödeme Logoları */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-              {/* iyzico Logo */}
-              <div className="flex items-center">
-                <Image
-                  src="/images/iyzico-logo.png"
-                  alt="iyzico ile öde"
-                  width={120}
-                  height={40}
-                  className="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity"
-                />
-              </div>
 
-              {/* Divider - sadece desktop'ta görünür */}
-              <div className="hidden md:block w-px h-8 bg-white/10"></div>
 
               {/* Kart Logoları */}
               <div className="flex items-center">
