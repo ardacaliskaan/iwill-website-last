@@ -4,7 +4,10 @@
     "target": {
       "namespace": "android_app",
       "package_name": "com.gelecekmobilyazilim.iwill",
-      "sha256_cert_fingerprints": ["C8:D3:02:B3:FE:38:E3:88:24:42:96:03:96:51:45:E9:00:AD:5E:27:82:E3:D7:04:96:F5:B1:5A:0F:02:BB:26"]
+      "sha256_cert_fingerprints": [
+        "4C:A6:FB:F9:9F:09:92:20:C2:70:95:13:FD:01:5E:5E:43:33:1B:84:BF:87:A9:62:CB:12:73:4C:F6:FC:0F:08",
+        "C8:D3:02:B3:FE:38:E3:88:24:42:96:03:96:51:45:E9:00:AD:5E:27:82:E3:D7:04:96:F5:B1:5A:0F:02:BB:26"
+      ]
     }
   }
 ]

@@ -78,13 +78,9 @@ export default function Hakkimizda() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Ekibimiz</h2>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {teamMembers.map((member) => (
-              <Link 
-                key={member.slug}
-                href={`/detaylar/${member.slug}`}
-                className="group"
-              >
+             
                 <div className="bg-gradient-to-br from-blue-50 to-primary/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 border-2 border-primary/20">
                   <div className="p-8 text-center">
                     <div className="w-20 h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
@@ -94,7 +90,6 @@ export default function Hakkimizda() {
                     <p className="text-primary font-medium">{member.role}</p>
                   </div>
                 </div>
-              </Link>
             ))}
           </div>
         </div>

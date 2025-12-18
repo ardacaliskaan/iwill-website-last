@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   const footerLinks = {
@@ -32,7 +33,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-lg mb-4">i will</h4>
             <p className="text-gray-400 text-sm mb-4">
-              Türkiye'nin sosyal platformu. Geleceğini bizimle paylaş.
+              Türkiye'nin sosyal platformu. Geleceğini paylaş.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => (
@@ -115,7 +116,46 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
+        {/* Güvenli Ödeme Logoları */}
+        <div className="border-t border-white/10 pt-8 pb-8">
+          <div className="flex flex-col items-center gap-6">
+            {/* Başlık */}
+            <div className="text-center">
+              <h5 className="text-white font-semibold text-sm mb-2">Güvenli Ödeme</h5>
+              <p className="text-gray-500 text-xs">SSL sertifikası ile korunan güvenli alışveriş</p>
+            </div>
+
+            {/* Ödeme Logoları */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+              {/* iyzico Logo */}
+              <div className="flex items-center">
+                <Image
+                  src="/images/iyzico-logo.png"
+                  alt="iyzico ile öde"
+                  width={120}
+                  height={40}
+                  className="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                />
+              </div>
+
+              {/* Divider - sadece desktop'ta görünür */}
+              <div className="hidden md:block w-px h-8 bg-white/10"></div>
+
+              {/* Kart Logoları */}
+              <div className="flex items-center">
+                <Image
+                  src="/images/payment-cards.png"
+                  alt="Visa, MasterCard, American Express, Troy"
+                  width={300}
+                  height={40}
+                  className="h-8 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom - Copyright */}
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-gray-500 text-sm mb-3">
             © 2025 i will - Gelecek Mobil Yazılım Tic. A.Ş. Tüm Hakları Saklıdır.
